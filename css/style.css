@@ -1,0 +1,69 @@
+.container{
+    width: 1170px;
+    margin: o auto;
+}
+.relativ-box{
+    width: 500px;
+    height: 500px;
+    background-color: aqua;
+    margin: 0 auto;
+    position: relative;
+    cursor: pointer;
+    transition-property:all ;
+    transition-duration:3s ;
+    transition-timing-function:ease-in ;
+    transition-delay:1s ;
+    -webkit-box-shadow: 5px 5px 15px 20px rgba(0,0,0,0.47); 
+box-shadow: 5px 5px 15px 20px rgba(0,0,0,0.47);
+;
+
+}
+
+
+.relativ-box:hover{
+    background-color: blueviolet;
+}
+.absolit-box{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    transition-property:all ;
+    transition-duration:2s ;
+    transition-timing-function:ease ;
+    transition-delay:1s ;
+}
+.absolit-box:hover{
+    width: 300px;
+    transition-duration:5s;
+    transform: translate(-50%,-50%); rotate(45deg);
+    background-color: brown;
+
+}
+.ball{
+    width:150px;
+    height: 150px;
+    background-color: brown;
+    border-radius: 100%;
+
+    position: relative;
+    animation-name: jump;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-delay: 2s;
+    animation-iteration-count: 2;
+
+}
+@keyframes jump {
+
+0% { top:0px; left: 0px; background: red;}
+25% {top:0px; left:100px;background: yellow;}
+50% {top:100px;left: 100px;background:blue ;}
+
+}
+
+ 
